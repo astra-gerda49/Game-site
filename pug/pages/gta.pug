@@ -1,0 +1,32 @@
+extends ../layouts/pages-layout
+block title 
+    - var title = 'GTA'
+block content
+    header 
+        .dota-box 
+            .container-xl.p-0
+                .container
+                    .row 
+                        .col-xxl-6.col-xl-6.col-lg-6.col-md-12 
+                            .hero-section.pt-5 
+                                h1.hero-title.text-white.m-0 GTA
+                                    p.hero-desk.text-white.my-5
+                                        | Dota 2 - компьютерная игра по сети. 
+                                    p.hero-desk.text-white
+                                        | В игре участвуют две команды по 5 человек. 
+            .img-mobile
+                img(src="./img/pic/gta-big.png", alt="")
+    main 
+        section.gallery.pt-5
+            .container-xl.p-0
+                .container
+                    h1.gallery-title Галерея 
+                    .swiper.mySwiper
+                        .swiper-wrapper
+                            .swiper-slide
+                                img(src="./img/pic/slides/gta-slide-1.png")
+                            .swiper-slide
+                                img(src="./img/pic/slides/gta-slide-2.png")
+                        .swiper-button-next
+                        .swiper-button-prev
+        section.articles.py-5
